@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "777654162546",
+    "project_id": "android-app-603e2",
+    "storage_bucket": "android-app-603e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777654162546:android:b025fcc3584cb3cd4c1eeb",
+        "android_client_info": {
+          "package_name": "edu.umich.dpm.sensorgrabber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777654162546-ndlgk76m73rfipdvj4godcmt9gg7b1rc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.umich.dpm.sensorgrabber",
+            "certificate_hash": "e7a4b3db2f1ed255ff66e857553b5bc6c54963dc"
+          }
+        },
+        {
+          "client_id": "777654162546-dbdjru0v63nodm9066vcfhq11ie953g9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCB1ivxG2eeGh8V970PPMhR4Hfr16PCci8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777654162546-dbdjru0v63nodm9066vcfhq11ie953g9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

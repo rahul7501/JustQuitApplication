@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetTargetsActivity">
+
+    <ImageView
+        android:id="@+id/background_iv_set_targets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/men_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/back_btn_sTA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintBottom_toBottomOf="@+id/background_iv_set_targets"
+        app:layout_constraintEnd_toStartOf="@+id/background_iv_set_targets"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background_iv_set_targets"
+        android:onClick="btnBack"/>
+
+    <TextView
+        android:id="@+id/set_targets_tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/calbri_bold"
+        android:text="@string/set_targets"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/back_btn_sTA"
+        app:layout_constraintTop_toBottomOf="@+id/back_btn_sTA"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <LinearLayout
+        android:id="@+id/set_targets_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_targets_tv_heading">
+
+        <EditText
+            android:id="@+id/editAvgCigarettes"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/avg_no_of_cigrittee"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:background="@drawable/ic_gray_round_corners_et"/>
+
+        <EditText
+            android:id="@+id/editNoOfCigarettesInPack"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/no_of_cigerattes_in_a_pack"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:inputType="number"
+            android:layout_marginTop="12dp"
+            android:singleLine="true"
+            android:background="@drawable/ic_gray_round_corners_et"/>
+
+        <EditText
+            android:id="@+id/editPricePerPack"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="@string/price_per_pack"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:layout_marginTop="12dp"
+            android:singleLine="true"
+            android:inputType="number"
+            android:background="@drawable/ic_gray_round_corners_et"/>
+
+
+        <TextView
+            android:id="@+id/types_of_targers_heading_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select type of target"
+            android:fontFamily="@font/calibri_regular"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_gray_round_corners_et"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/daily_target_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/calbri_bold"
+                android:text="Daily Targets"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/my_daily_limit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/calibri_regular"
+                android:text="My limit per day :"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/daily_target_tv"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/for_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/calibri_regular"
+                android:text="for"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/my_daily_limit_tv"
+                app:layout_constraintTop_toBottomOf="@+id/my_daily_limit_tv"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/cigeratte_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/calibri_regular"
+                android:text="cigarettes"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/editLimitPerDay"
+                app:layout_constraintTop_toBottomOf="@+id/daily_target_tv"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/daily_days_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/calibri_regular"
+                android:text="days"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/editNoOfDays"
+                app:layout_constraintTop_toTopOf="@+id/editNoOfDays" />
+
+            <EditText
+                android:id="@+id/editLimitPerDay"
+                android:layout_width="100dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:inputType="number"
+                android:gravity="center"
+                android:singleLine="true"
+                android:fontFamily="@font/calbri_bold"
+                android:textColor="@color/black"
+                android:background="@drawable/ic_gray_round_corners_et"
+                app:layout_constraintBottom_toBottomOf="@+id/my_daily_limit_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/my_daily_limit_tv"
+                app:layout_constraintTop_toTopOf="@+id/my_daily_limit_tv" />
+
+
+            <EditText
+                android:id="@+id/editNoOfDays"
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/ic_gray_round_corners_et"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:fontFamily="@font/calbri_bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/for_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/for_tv"
+                app:layout_constraintTop_toTopOf="@+id/for_tv" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:background="@drawable/ic_gray_horizontal_line"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:fontFamily="@font/calibri_regular"
+                android:padding="12dp"/>
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="1dp"
+                android:background="@drawable/ic_gray_horizontal_line"/>
+
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_gray_round_corners_et"
+            android:layout_marginTop="8dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/monthly_target_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/calbri_bold"
+                android:text="Monthly Targets"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/my_monthly_limit_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/calibri_regular"
+                android:text="My target :"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/monthly_target_tv"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/for_tv_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="@font/calibri_regular"
+                android:text="for"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/my_monthly_limit_tv"
+                app:layout_constraintTop_toBottomOf="@+id/my_monthly_limit_tv"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/cigeratte_tv_monthly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/calibri_regular"
+                android:text="cigarettes per day"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/editLimitPerMonth"
+                app:layout_constraintTop_toBottomOf="@+id/monthly_target_tv"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/monthly_days_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/calibri_regular"
+                android:text="months"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/editNoOfMonths"
+                app:layout_constraintTop_toTopOf="@+id/editNoOfMonths" />
+
+            <EditText
+                android:id="@+id/editLimitPerMonth"
+                android:layout_width="100dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/ic_gray_round_corners_et"
+                android:fontFamily="@font/calbri_bold"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/my_monthly_limit_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/my_monthly_limit_tv"
+                app:layout_constraintTop_toTopOf="@+id/my_monthly_limit_tv" />
+
+
+            <EditText
+                android:id="@+id/editNoOfMonths"
+                android:layout_width="50dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/ic_gray_round_corners_et"
+                android:fontFamily="@font/calbri_bold"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/for_tv_monthly"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/for_tv_monthly"
+                app:layout_constraintTop_toTopOf="@+id/for_tv_monthly" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:id="@+id/targets_ll"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="150dp"
+                android:layout_height="42dp"
+                android:background="@drawable/cancel_btn_bg"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:inputType="number"
+                android:fontFamily="@font/calbri_bold"
+                android:gravity="center"
+                android:onClick="btnBack"/>
+
+            <TextView
+                android:id="@+id/btnSetTarget"
+                android:layout_width="150dp"
+                android:layout_height="42dp"
+                android:background="@drawable/ic_blue_round_corners_bg"
+                android:text="SET"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textAllCaps="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/calbri_bold"
+                android:gravity="center"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

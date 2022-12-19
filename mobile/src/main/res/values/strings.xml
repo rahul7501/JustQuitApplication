@@ -1,0 +1,17 @@
+<resources>
+
+    <string name="app_name">JustQuit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="server_client_id">111841242110-4f7a8t0kaf0dsol778qrgquhfacql74s.apps.googleusercontent.com</string>
+    <string name="target">Target</string>
+    <string name="set_targets">Set Targets</string>
+    <string name="avg_no_of_cigrittee">Average no of cigerattes consumed in a day</string>
+    <string name="no_of_cigerattes_in_a_pack">No. of cigerattes in a pack</string>
+    <string name="price_per_pack">Price per pack</string>
+    <string name="tv_connect_nomessenger">Background service not started</string>
+    <string name="tv_connect_nodevice">No compatible device in range</string>
+    <string name="tv_connect_nogoogleapi">Can\'t connect to GoogleApi</string>
+    <string name="tv_connect_disconnected">Companion app not running</string>
+    <string name="tv_connect_connected">Connected, ready to stream</string>
+    <string name="tv_connect_streaming">Streaming to device</string>
+</resources>

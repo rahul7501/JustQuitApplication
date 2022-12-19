@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+    <item
+        android:id="@+id/nav_id_summary_listing_fragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_summary_unselected"
+        android:title="@string/summary"/>-->
+    <item
+        android:id="@+id/nav_home_btn"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title=""/>
+    <item
+        android:id="@+id/nav_brainstrim_btn"
+        android:enabled="true"
+        android:icon="@drawable/ic_brainstrom"
+        android:title=""/>
+    <item
+        android:id="@+id/nav_health_btn"
+        android:enabled="true"
+        android:icon="@drawable/ic_heartbeat"
+        android:title=""/>
+
+    <item
+        android:id="@+id/nav_tocken_btn"
+        android:enabled="true"
+        android:icon="@drawable/ic_voucher_states"
+        android:title=""/>
+    <item
+        android:id="@+id/nav_badge_btn"
+        android:enabled="true"
+        android:icon="@drawable/ic_badge"
+        android:title=""/>
+</menu>
